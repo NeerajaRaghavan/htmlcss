@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        h1{
+            color:blue;
+            font-size: 100px;
+            text-align: center;
+        }
+
+        section{
+            width:90%;
+            margin:auto;
+            display:grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        div{
+            margin:30px 0px;
+            font-size: 35px;
+        }
+        /* media query for extra small device */
+        @media screen and (min-width:1px) and (max-width:600px){ /* this style applied when the browser window is b/x 1px-600px */
+            h1{
+            color:orange;
+            font-size: 40px;
+                   }
+            section{
+                grid-template-columns: auto; /* when browser size in b/w 1px-600px the grid will take one column  */
+            }
+
+            div{
+                margin:20px 0px;
+                font-size: 30px;
+            }
+        }    
+         /* media query for small device */
+         @media screen and (min-width:600px) and (max-width:800px){ /* this style applied when the browser window is b/x 600px-800px */
+            h1{
+            color:purple;
+            font-size: 55px;
+                }
+
+            section{
+                grid-template-columns: auto auto; /* when browser size in b/w 600px-800 the grid will take two column  */
+        
+            }
+
+            div{
+                margin:20px 0px;
+                font-size: 30px;
+            }
+        }    
+        /* media query for medium device */
+        @media screen and (min-width:800px) and (max-width:1100px){ /* this style applied when the browser window is b/x 800px-1100px */
+            h1{
+            color:green;
+            font-size: 65px;
+                }
+
+                section{
+                grid-template-columns: auto auto auto; /* when browser size in b/w 800px-1100px the grid will take two column  */
+        
+            }
+
+            div{
+                margin:20px 0px;
+                font-size: 25px;
+            }
+        }      
+
+        </style>
+    </head>
+    <body>
+        <h1> Media Query in CSS?</h1>
+        <section>
+            <div>Banglore</div>
+            <div>Chennai</div>
+            <div>Delhi</div>
+            <div>Mumbai</div>
+            <div>Kolkata</div>
+            <div>Pune</div>
+            <div>Hydrabad</div>
+            <div>Kochi</div>
+            <div>Manglore</div>
+            <div>website development</div>
+            <div>digital marketing</div>
+            <div>content Writing</div>
+            <div>Customer Support</div>
+</section>
+    </body>
+</html>

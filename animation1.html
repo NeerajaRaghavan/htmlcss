@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        body{
+            margin:0px;
+        }
+        
+        @keyframes mybanner {
+            25%{
+                background-color: green;
+                 /* 25% in 10 sec duration first 2.5 sec the BG will turn Green*/
+            font-size: 40px;
+                }
+            
+            50%{
+                background-color: red;/*  50% in 10 sec duration first 2.5 -5.sec the BG will turn Red*/
+                font-size: 60px;
+            }
+            75%{
+                background-color: blue;
+                font-size: 80px
+            }
+        }
+        section{
+            background:purple;
+            color:white;
+            padding: 100px;
+            height: 300px;
+            font-size: 100px;
+            text-align: center;
+            animation: mybanner;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+
+        </style>
+    </head>
+    <body>
+        <section> CSS Animation 1 </section>
+    </body>
+</html>

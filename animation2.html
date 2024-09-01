@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+             /* Animation with background Image*/
+        body{
+            margin:0px;
+        }
+        
+        @keyframes mybanner {
+            25%{
+                background-image: url('2.jpg');
+                 /* 25% in 10 sec duration first 2.5 sec the BG will turn Green*/
+            font-size: 40px;
+                }
+            
+            50%{
+                background-image: url('3.jpg');/*  50% in 10 sec duration first 2.5 -5.sec the BG will turn Red*/
+                font-size: 60px;
+            }
+            75%{
+                background-image: url('4.jpg');
+                font-size: 80px
+            }
+        }
+        section{
+            background-image: url('1.jpg');
+            background-size: 100% 100%;
+            color:white;
+            padding: 100px;
+            height: 300px;
+            font-size: 100px;
+            text-align: center;
+            animation: mybanner;
+            animation-iteration-count: infinite;
+            animation-duration: 10s;
+        }
+        ul{
+            margin:0px;
+            background-color: purple;
+            padding:0px 10px;
+            top:0px;
+            position:sticky;
+        }
+        ul li{
+            display:inline-block;
+            padding:18px 30px;
+            color: white;
+            font-size: 20px
+             }
+        ul li:hover{
+            background-color: red;
+            cursor: pointer;
+        }
+        .container{
+                width:80%;
+                margin:auto;
+        }
+
+        h1{
+            color:blue;
+            font-size: 65px;
+            text-align: center;
+        }
+
+        .ourservice{
+                margin-top: 40px;
+                padding:40px 10%;
+                background-color: darkcyan; 
+                color:white;         
+                display:grid;
+                grid-template-columns: auto auto auto auto;
+
+        }
+
+        .ourservice div{
+
+            font-size: 35px;
+            margin:40px 0px;
+        }
+
+        footer{
+            min-height:150px;
+            padding:15px;
+            background-color: rgb(1,20,27);
+            color:white;
+            font-size: 18px;
+            display:grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            text-align:center;
+            border-top: 10px solid orange;
+        }
+        marquee{
+            padding:12px;
+            color:red;
+            
+        }
+
+        @media screen and (min-width:1px) and (max-width:600px){
+
+            ul{
+                padding:0px;
+            }
+            ul li{
+                padding:5px;
+                font-size:13px;
+            }
+
+            section{
+                font-size:40px;
+                height:100px;
+                padding:50px;
+            }
+            @keyframes mybanner {
+            25%{
+             font-size: 20px;
+                }
+            
+            50%{
+           
+                font-size: 30px;
+            }
+            75%{
+                
+                font-size: 35px;
+            }
+        }
+        .ourservice{
+            grid-template-columns: auto;
+        }
+
+        footer{
+            grid-template-columns: auto;
+        }
+    }
+
+       
+        </style>
+    </head>
+    <body>
+        <marquee> Contact Us:789654896</marquee>
+        <ul>
+            <li>Home</li>
+            <li>Our Services</li>
+            <li>Contact Us</li>
+            <li>Login</li>
+            <li>Register</li>
+            <li>Our Products</li>
+        </ul>
+        <section> CSS Animation 1 </section>
+        <div class="container">
+            <h1>Our Services</h1>
+            <p> jfg sfhjk skhf sedh kashflk skh askjdh askjeh askje fdhrtj tfjtej dftjd
+                jfg sfhjk skhf sedh kashflk skh askjdh askjeh askje fdhrtj tfjtej dftjd
+                jfg sfhjk skhf sedh kashflk skh askjdh askjeh askje fdhrtj tfjtej dftjd
+                jfg sfhjk skhf sedh kashflk skh askjdh askjeh askje fdhrtj tfjtej dftjd
+                jfg sfhjk skhf sedh kashflk skh askjdh askjeh askje fdhrtj tfjtej dftjd
+                jfg sfhjk skhf sedh kashflk skh askjdh askjeh askje fdhrtj tfjtej dftjd  </p>
+        </div>
+
+        <div class="ourservice">
+            <div>Banglore</div>
+            <div>Chennai</div>
+            <div>Delhi</div>
+            <div>Mumbai</div>
+            <div>Kolkata</div>
+            <div>Pune</div>
+            <div>Hydrabad</div>
+            <div>Manglore</div>
+            <div>website development</div>
+            <div>digital marketing</div>
+            <div>content Writing</div>
+            <div>Customer Support</div>
+
+        </div>
+
+        <footer>
+            <p> E-Mail: Contact@dev.com</p>
+            <p> Contact:789654896</p>
+            <p> Address: Chennai</p>
+        </footer>
+    </body>
+</html>
